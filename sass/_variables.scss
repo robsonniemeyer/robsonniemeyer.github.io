@@ -1,0 +1,34 @@
+@use "sass:math";
+@use "sass:color";
+
+$f: math.div(100%, 24);
+
+$background: hsl(240 $f*3 $f*24);
+$background-secondary: hsl(240 $f*3 $f*23);
+$text-color: hsl(240 $f*3 $f*3);
+$text-color-secondary: hsl(240 $f*3 $f*24);
+$font-family: "Inter", sans-serif;
+
+// header
+$header-background: url("../images/hero-image.webp");
+$header-background-large: url("../images/hero-image-large.webp");
+
+// section
+$section-rotate: rotateZ(math.div(-1turn, math.pow(2, 7)));
+$section-rotate-secondary: rotateZ(math.div(1turn, math.pow(2, 7)));
+
+// link
+$link-text-color: hsl(210 $f*24 $f*10);
+$link-hover-text-color: hsl(210 $f*24 $f*12);
+
+// button
+$button-background: hsl(120 $f*12 $f*10);
+$button-hover-background: hsl(120 $f*12 $f*12);
+$button-text-color: hsl(120 $f*12 $f*24);
+$button-hover-text-color: transparent;
+
+// border
+$border-color: hsl(240 $f*3 $f*22);
+
+// footer
+$footer-background: hsl(240 $f*3 $f*22);
