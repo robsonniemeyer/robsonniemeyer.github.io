@@ -1,0 +1,55 @@
+#main {
+  section {
+    overflow: hidden;
+    position: relative;
+
+    &:nth-child(odd) {
+      padding: 2rem 0 4rem;
+    }
+
+    &:nth-child(odd)::before {
+      content: "";
+      background-color: var(--background-color-secondary);
+      bottom: -8rem;
+      height: 8rem;
+      right: 0;
+      position: absolute;
+      transform: var(--section-rotate-secondary);
+      transform-origin: 100% 0%;
+      width: 112.5%;
+    }
+
+    &:nth-child(even) {
+      background-color: var(--background-color-secondary);
+      padding: 2rem 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #main {
+    section {
+      &:nth-child(odd) {
+        padding: 4rem 0 8rem;
+      }
+
+      &:nth-child(even) {
+        padding: 4rem 0;
+      }
+    }
+
+    #about {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(3, 1fr);
+
+      .col1 {
+        grid-column: 1 / 2;
+      }
+
+      .col2 {
+        grid-column: 2 / 4;
+      }
+    }
+  }
+}
