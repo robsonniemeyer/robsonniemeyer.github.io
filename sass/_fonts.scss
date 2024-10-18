@@ -1,0 +1,15 @@
+@font-face {
+  font-display: swap;
+  font-family: "Inter Tight";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Inter Tight"), local("InterTight"), url("../fonts/InterTight-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Inter"), url("../fonts/Inter-VariableFont_opsz,wght.ttf") format(truetype) tech(variations);
+}

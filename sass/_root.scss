@@ -1,0 +1,32 @@
+@use "sass:color";
+@use "sass:math";
+
+:root {
+  --background-color: hsl(240 16% 100%);
+  --background-color-secondary: hsl(240 16% 96%);
+  --border-color: hsl(240 16% 92%);
+  --border-radius: 0.5rem;
+  --button-background-color: hsl(120 48% 44%);
+  --button-background-color-hover: #{color.scale(hsl(120 48% 44%), $lightness: 12%)};
+  --button-text-color: hsl(120 48% 100%);
+  --button-text-color-hover: transparent;
+  --font-family: "Inter", sans-serif;
+  --font-family-display: "Inter Tight", sans-serif;
+  --font-size-h1: 1.587401rem;
+  --font-size-h1-large: 4rem;
+  --font-size-h2: 1.259921rem;
+  --font-size-h2-large: 1.587401rem;
+  --font-size-h3: 1rem;
+  --font-size-h3-large: 1.259921rem;
+  --font-size-small: 0.793701rem;
+  --footer-background-color: hsl(240 16% 92%);
+  --line-height: 1.587401;
+  --line-height-display: 1.259921;
+  --link-color: hsl(210 100% 44%);
+  --link-color-hover: #{color.scale(hsl(210 100% 44%), $lightness: 12%)};
+  --section-rotate: rotateZ(#{math.div(-1turn, math.pow(2, 7))});
+  --section-rotate-secondary: rotateZ(#{math.div(1turn, math.pow(2, 7))});
+  --text-color: hsl(240 16% 16%);
+  --text-color-secondary: hsl(240 16% 100%);
+  --transition: 250ms ease-out;
+}
