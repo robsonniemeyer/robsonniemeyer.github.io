@@ -12,57 +12,27 @@
   justify-content: center;
   letter-spacing: 0.0625rem;
   line-height: var(--line-height-display);
+  margin-bottom: 1rem;
   padding: 1rem 2rem;
   text-align: center;
   text-shadow: 0 0 0.125rem rgb(0 0 0 / 0.3333333333);
   transition: var(--transition);
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &:active {
     filter: unset;
-  }
-
-  &::before {
-    transition: var(--transition);
-  }
-
-  &:active::before {
-    background-color: var(--button-background-color);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .button {
     display: inline-flex;
-    overflow: hidden;
-    position: relative;
 
     &:hover {
       background-color: var(--button-background-color-hover);
-      color: var(--button-text-color-hover);
-      text-shadow: 0 0 0.125rem rgb(0 0 0 / 0);
-    }
-
-    &::before {
-      align-items: center;
-      color: var(--text-color-secondary);
-      content: "OBAAA!!!";
-      display: flex;
-      font-weight: 500;
-      height: 100%;
-      justify-content: center;
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      text-shadow: 0 0 0.125rem rgb(0 0 0 / 0);
-      top: 0;
-      transform: scale(8);
-      width: 100%;
-    }
-
-    &:hover::before {
-      opacity: 1;
-      text-shadow: 0 0 0.125rem rgb(0 0 0 / 0.3333333333);
-      transform: scale(1);
     }
   }
 }

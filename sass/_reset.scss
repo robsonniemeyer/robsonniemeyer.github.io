@@ -6,11 +6,15 @@
   box-sizing: border-box;
   font-family: inherit;
   font-size: inherit;
-  font-style: normal;
+  font-style: inherit;
   font-weight: inherit;
   line-height: inherit;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 ol,
