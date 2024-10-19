@@ -6,8 +6,8 @@
   --background-color-secondary: hsl(240 12.5% 93.75%);
   --border-color: hsl(240 12.5% 87.5%);
   --border-radius: 0.5rem;
-  --button-background-color: hsl(120 50% 43.75%);
-  --button-background-color-hover: #{color.scale(hsl(120 50% 43.75%), $lightness: 12.5%)};
+  --button-background-color: #21b354;
+  --button-background-color-hover: #{color.scale(#21b354, $lightness: 12.5%)};
   --button-text-color: #ffffff;
   --button-text-color-hover: transparent;
   --font-family: "Inter", sans-serif;
